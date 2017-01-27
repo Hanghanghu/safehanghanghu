@@ -1,1 +1,1 @@
-"[{\"img\" : \"http://www.safe182.go.kr/blobImgView.do?msspsnIdntfccd=4450940&rptDscd=2\",""\"name\":\"\uae40\ud6a8\uacb8(15\uc138) \uc5ec\uc790\",\"age\":\"\uc2e4\uc885\ub2f9\uc2dc\ub098\uc774(15\uc138)\",\"spot\":\"\uc2e4\uc885\uc7a5\uc18c : \uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uc1a1\ud30c\uad6c\"}]"
+[{"img" : "http://www.safe182.go.kr/blobImgView.do?msspsnIdntfccd=4451006&rptDscd=2","name":"이재욱(23세) 남자","age":"실종당시나이(23세)","spot":"실종장소 : 부평역 1호선"}]

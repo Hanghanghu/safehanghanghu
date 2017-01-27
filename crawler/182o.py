@@ -25,10 +25,6 @@ imageData = Data.find("img")
 
 imgData = '[{"img" : "' + url2 + (imageData.get('src')) + '",'
 
-jsonimgData = json.dumps(imgData).encode('utf-8')
-
-print jsonimgData
-
 idenData = Data.find("dl")
 
 idenDataStr = str(idenData)
@@ -37,11 +33,15 @@ idenDataStr = idenDataStr.replace('</dt>' + '\n' + '<dd>','","age":"')
 idenDataStr = idenDataStr.replace('</dd>' + '\n' + '<dd>','","spot":"')
 idenDataStr = idenDataStr.replace('</dd>' + '\n' + '</dl>','"}]')
 
-jsonidenDataStr = json.dumps(idenDataStr).encode('utf-8')
-
-print jsonidenDataStr
-
-f.write(jsonimgData)
-f.write(jsonidenDataStr)
+f.write(imgData.encode('utf-8'))
+f.write(idenDataStr)
 
 f.close()
+
+f1 =open("safe.json", "r")
+
+string = str(f1.read())
+
+JsonData = json.dumps(string)
+
+f1.close()
