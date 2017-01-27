@@ -7,7 +7,11 @@ import sys
 reload(sys)
 sys.setdefaultencoding('euc-kr')
 
-f = open("safe.json", "w")
+f = open("safe.txt", "w")
+
+f1 = open("safe.txt", "r")
+
+f2 = open("safe.json", "w")
 
 url = "http://www.safe182.go.kr/index.do"
 
@@ -38,10 +42,12 @@ f.write(idenDataStr)
 
 f.close()
 
-f1 =open("safe.json", "r")
-
 string = str(f1.read())
 
-JsonData = json.dumps(string)
+JsonData = json.dumps(string).decode('unicode-escape').encode('utf-8')
 
 f1.close()
+
+f2.write(JsonData)
+
+f2.close()
